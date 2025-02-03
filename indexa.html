@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+     <html lang="ar" dir="rtl">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>مسلم - جولة جديدة</title>
+         <link rel="stylesheet" href="styles.css">
+     </head>
+     <body>
+         <div class="container">
+             <!-- الصفحة الرئيسية -->
+             <div id="home-page" class="page">
+                 <img src="logo.png" alt="لوجو مسلم" class="logo">
+                 <h1>مسلم</h1>
+                 <p>بداية جولة جديدة</p>
+                 <button id="start-btn">ابدأ الجولة</button>
+                 <button id="results-btn">النتائج السابقة</button>
+             </div>
+
+             <!-- صفحة الأسئلة -->
+             <div id="quiz-page" class="page hidden">
+                 <h2 id="question"></h2>
+                 <div id="timer">20</div>
+                 <input type="text" id="answer-input" placeholder="اكتب إجابتك هنا...">
+                 <button id="submit-answer">إجابة</button>
+             </div>
+
+             <!-- صفحة النتائج -->
+             <div id="results-page" class="page hidden">
+                 <h2>النتائج السابقة</h2>
+                 <ul id="results-list"></ul>
+                 <button id="back-to-home">العودة للصفحة الرئيسية</button>
+             </div>
+         </div>
+
+         <script src="script.js"></script>
+     </body>
+     </html>    
